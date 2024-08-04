@@ -1,12 +1,12 @@
-<template>  
+<template>
   <footer>
     <div class="copyright">
       <n-text class="description" v-html="packageJson.description" />
       <n-text
         class="author"
-        :depth="3"  
-        v-html="'神秘的星空smf'"
-        @click="jumpLink('https://songziheng.com')" 
+        :depth="3"
+        v-html="packageJson.author"
+        @click="jumpLink(packageJson.github)"
       />
     </div>
     <n-text
