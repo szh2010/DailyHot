@@ -16,3 +16,5 @@ app.use(pinia);
 app.use(router);
 
 app.mount("#app");
+
+document.body.innerHTML = document.body.innerHTML.replace(/&nbsp;/g, ' ');
